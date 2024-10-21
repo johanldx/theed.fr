@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theed - Bash</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xterm/css/xterm.css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.png') }}" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+
+    <meta name="description" content="Découvrez Theed, un écosystème de services centralisés développé par un passionné de technologie. Explorez les solutions pour le partage de fichiers, le gaming et le contenu numérique.">
+    <meta name="keywords" content="theed, écosystème de services, partage de fichiers, gaming, contenu numérique, technologie, infrastructure, NAS">
+    <meta name="author" content="Johan Ledoux">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Theed - Un écosystème de services centralisés">
+    <meta property="og:description" content="Découvrez Theed, un écosystème de services centralisés développé par un passionné de technologie. Explorez les solutions pour le partage de fichiers, le gaming et le contenu numérique.">
+    <meta property="og:image" content="{{ url_for('static', filename='img/favicon.png', _external=True) }}">
+    <meta property="og:url" content="https://johan.theed.fr">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Theed - Un écosystème de services centralisés">
+    <meta name="twitter:description" content="Découvrez Theed, un écosystème de services centralisés développé par un passionné de technologie. Explorez les solutions pour le partage de fichiers, le gaming et le contenu numérique.">
+    <meta name="twitter:image" content="{{ url_for('static', filename='img/favicon.png', _external=True) }}">
+
+</head>
+<body>
+    <div id="terminal"></div>
+
+    <main class="seo">
+        <h1>Theed</h1>
+        <h2>Un écosystème de services centralisés</h2>
+
+        <p>
+            Derrière ce projet se trouve un passionné de technologie, déterminé à explorer et maîtriser l'infrastructure à grande échelle. 
+            En utilisant un NAS comme base, ce réseau de services a été développé pour offrir une solution complète, que ce soit pour le partage de fichiers,
+            le gaming ou le contenu numérique, avec un accent sur l'efficacité, la simplicité et l'accessibilité. Ce projet reflète une volonté d'apprentissage constant
+            et de partage des connaissances pour créer un environnement numérique plus connecté et performant.
+        </p>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/xterm/lib/xterm.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/xterm-addon-fit/lib/xterm-addon-fit.js"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
